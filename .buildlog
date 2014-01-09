@@ -251,3 +251,28 @@ build.dart --machine --changed=build/assets/fallback/jscam_canvas_only.swf --cha
 [{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":528,"charEnd":561}}]
 build.dart finished [1175 ms]
 
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":551,"charEnd":584}}]
+build.dart finished [1104 ms]
+
+---
+build.dart --machine --removed=build/assets/fallback/jscam_canvas_only.swf --removed=build/flash_invoke_test.cs...
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":551,"charEnd":584}}]
+build.dart finished [1127 ms]
+
+---
+build.dart --machine --changed=build/assets/fallback/jscam_canvas_only.swf --changed=build/flash_invoke_test.cs...
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":551,"charEnd":584}}]
+build.dart finished [1179 ms]
+
+---
+build.dart --machine --removed=build/assets/fallback/jscam_canvas_only.swf --removed=build/flash_invoke_test.cs...
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":551,"charEnd":584}}]
+build.dart finished [1219 ms]
+
+---
+build.dart --machine --changed=build/assets/fallback/jscam_canvas_only.swf --changed=build/flash_invoke_test.cs...
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":11,"charStart":551,"charEnd":584}}]
+build.dart finished [1198 ms]
+

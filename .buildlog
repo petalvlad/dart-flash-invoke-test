@@ -173,3 +173,8 @@ build.dart --machine --changed=config.ru
 [{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":485,"charEnd":518}}]
 build.dart finished [1184 ms]
 
+---
+build.dart --machine --changed=config.ru
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":485,"charEnd":518}}]
+build.dart finished [1082 ms]
+

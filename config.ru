@@ -1,5 +1,5 @@
 use Rack::Static,
-  :urls => ["/packages", "/style_binding_test.css", "/style_binding_test.html_bootstrap.dart.js"],
+  :urls => ["/packages", "/flash_invoke_test.css", "/flash_invoke_test.html_bootstrap.dart.js"],
   :root => "build"
 
-run Rack::File.new("build/style_binding_test.html")
+run Rack::File.new("build/flash_invoke_test.html")

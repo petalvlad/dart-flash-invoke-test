@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flash invoke test</title>
+    <link rel="stylesheet" href="flash_invoke_test.css">
+    
+    <link rel="import" href="camera_polymer.html">
+    <link rel="import" href="container_polymer.html">
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+  </head>
+  <body>
+    <container-polymer></container-polymer>
+    <script>
+      window.webcam = {
+        width: 320, 
+              height: 240, 
+              mode: "callback",
+        capture: function (x) {
+          var cam = document.getElementById('XwebcamXobjectX');
+          cam.capture(x);
+        },
+        save: function (x) {
+          var cam = document.getElementById('XwebcamXobjectX');
+          cam.save(x);
+        },
+              onImageSaved: function (img) {},
+              debug: function () {},
+              onCapture: function () {
+                var canvas = document.getElementById('canvas');
+                this.image = canvas.getContext("2d").getImageData(0, 0, this.width, this.height);
+                this.pos = 0;
+                  this.save();
+              },
+              onTick: function () {},
+              onSave: function (data) {
+  
+                  var col = data.split(";"),
+                      img = this.image,
+                      tmp = null,
+                      w = this.width,
+                      h = this.height;
+  
+                  for (var i = 0; i < w; i++) { 
+                      tmp = parseInt(col[i], 10);
+                      img.data[this.pos + 0] = (tmp >> 16) & 0xff;
+                      img.data[this.pos + 1] = (tmp >> 8) & 0xff;
+                      img.data[this.pos + 2] = tmp & 0xff;
+                      img.data[this.pos + 3] = 0xff;
+                      this.pos += 4;
+                  }
+  
+                  if (this.pos >= 4 * w * h) { 
+                      this.onImageSaved(img);
+                  }
+  
+              },
+              onLoad: function () {}
+          };
+  
+      window.webcam.onImageSaved = function (img) {
+        var canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        ctx.putImageData(img, 0, 0);
+      };
+    </script>
+    
+  </body>
+</html>

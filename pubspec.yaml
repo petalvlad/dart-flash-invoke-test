@@ -1,0 +1,7 @@
+name: flash_invoke_test
+description: A sample Polymer application
+dependencies:
+    polymer: any
+transformers:
+- polymer:
+    entry_points: web/flash_invoke_test.html

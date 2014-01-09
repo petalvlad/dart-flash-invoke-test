@@ -1,0 +1,170 @@
+---
+build.dart --machine --full
+
+build.dart finished [1285 ms]
+
+---
+build.dart --machine --changed=web/flash_invoke_test.html
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build.dart finished [2070 ms]
+
+---
+build.dart --machine --removed=web/clickcounter.dart --removed=web/clickcounter.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1065 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1079 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1310 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1153 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.dart
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1159 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1165 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1048 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1070 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1147 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+[{"method":"error","params":{"file":"web/flash_invoke_test.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"flash_invoke_test\".","line":10,"charStart":194,"charEnd":238}}]
+[{"method":"warning","params":{"file":"web/flash_invoke_test.html","message":"definition for Polymer element with tag name \"container-polymer\" not found.","line":15,"charStart":396,"charEnd":415}}]
+build failed with errors: {Transform polymer (Linter) on flash_invoke_test|web/flash_invoke_test.html threw error: couldn't find imported asset "web/clickcounter.html" in package "flash_invoke_test".}
+build.dart finished [1033 ms]
+
+---
+build.dart --machine --changed=web/flash_invoke_test.html
+
+build.dart finished [1092 ms]
+
+---
+build.dart --machine --changed=web/flash_invoke_test.html
+
+build.dart finished [1062 ms]
+
+---
+build.dart --machine --changed=web/flash_invoke_test.html
+
+build.dart finished [1106 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+
+build.dart finished [1066 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.dart
+
+build.dart finished [1149 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.dart
+
+build.dart finished [1088 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.dart
+
+build.dart finished [1075 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+
+build.dart finished [1036 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+
+build.dart finished [1048 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+
+build.dart finished [1022 ms]
+
+---
+build.dart --machine --changed=web/flash_invoke_test.html
+
+build.dart finished [1224 ms]
+
+---
+build.dart --machine --changed=web/assets/fallback/jscam_canvas_only.swf
+
+build.dart finished [1085 ms]
+
+---
+build.dart --machine --changed=Gemfile --changed=config.ru
+
+build.dart finished [1098 ms]
+
+---
+build.dart --machine --changed=Gemfile.lock
+
+build.dart finished [1096 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":484,"charEnd":517}}]
+build.dart finished [1592 ms]
+
+---
+build.dart --machine --changed=web/container_polymer.dart
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":484,"charEnd":517}}]
+build.dart finished [1405 ms]
+
+---
+build.dart --machine --changed=web/camera_polymer.html
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":485,"charEnd":518}}]
+build.dart finished [1267 ms]
+
+---
+build.dart --machine --changed=build/assets/fallback/jscam_canvas_only.swf --changed=build/flash_invoke_test.cs...
+[{"method":"warning","params":{"file":"web/camera_polymer.html","message":"Event handler \"onclick\" will be interpreted as an inline JavaScript event handler. Use the form on-event-name=\"handlerName\" if you want a Dart handler that will automatically update the UI based on model changes.","line":10,"charStart":485,"charEnd":518}}]
+build.dart finished [1187 ms]
+

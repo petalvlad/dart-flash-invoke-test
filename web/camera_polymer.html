@@ -1,0 +1,17 @@
+<polymer-element name='camera-polymer'>
+  <template>
+    <object id="XwebcamXobjectX" type="application/x-shockwave-flash" data="assets/fallback/jscam_canvas_only.swf" width="352px" height="264px">
+      <param name="movie" value="assets/fallback/jscam_canvas_only.swf" />
+      <param name="FlashVars" value="mode=callback&amp;quality=100" />
+      <param name="allowScriptAccess" value="always" />
+    </object>
+    
+    <canvas id="canvas" width="320" height="240"></canvas>
+    <a onclick="window.webcam.capture()">Capture</a>
+   
+  </template>
+  
+  <script type="application/dart" src="camera_polymer.dart">
+  </script>
+ 
+</polymer-element>

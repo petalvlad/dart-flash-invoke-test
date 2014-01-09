@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><script src="packages/shadow_dom/shadow_dom.debug.js"></script>
+<script src="packages/custom_element/custom-elements.debug.js"></script>
+<script src="packages/browser/interop.js"></script>
+
+    <meta charset="utf-8">
+    <title>Flash invoke test</title>
+    <link rel="stylesheet" href="flash_invoke_test.css">
+    
+    
+    
+    <script src="flash_invoke_test.html_bootstrap.dart.js"></script>
+    
+  </head>
+  <body><polymer-element name="camera-polymer">
+  <template>
+    <object id="XwebcamXobjectX" type="application/x-shockwave-flash" data="assets/fallback/jscam_canvas_only.swf" width="352px" height="264px">
+      <param name="movie" value="assets/fallback/jscam_canvas_only.swf">
+      <param name="FlashVars" value="mode=callback&amp;quality=100">
+      <param name="allowScriptAccess" value="always">
+    </object>
+    
+    <canvas id="canvas" width="320" height="240"></canvas>
+    <a onclick="window.webcam.capture()">Capture</a>
+   
+  </template>
+  
+  
+ 
+</polymer-element><polymer-element name="container-polymer">
+  <template>
+    <div id="container">
+    </div>
+    <button on-click="{{camera}}">show camera</button>
+  </template>
+  
+  
+ 
+</polymer-element>
+    <container-polymer></container-polymer>
+    <script>
+      window.webcam = {
+        width: 320, 
+              height: 240, 
+              mode: "callback",
+        capture: function (x) {
+          var cam = document.getElementById('XwebcamXobjectX');
+          cam.capture(x);
+        },
+        save: function (x) {
+          var cam = document.getElementById('XwebcamXobjectX');
+          cam.save(x);
+        },
+              onImageSaved: function (img) {},
+              debug: function () {},
+              onCapture: function () {
+                var canvas = document.getElementById('canvas');
+                this.image = canvas.getContext("2d").getImageData(0, 0, this.width, this.height);
+                this.pos = 0;
+                  this.save();
+              },
+              onTick: function () {},
+              onSave: function (data) {
+  
+                  var col = data.split(";"),
+                      img = this.image,
+                      tmp = null,
+                      w = this.width,
+                      h = this.height;
+  
+                  for (var i = 0; i < w; i++) { 
+                      tmp = parseInt(col[i], 10);
+                      img.data[this.pos + 0] = (tmp >> 16) & 0xff;
+                      img.data[this.pos + 1] = (tmp >> 8) & 0xff;
+                      img.data[this.pos + 2] = tmp & 0xff;
+                      img.data[this.pos + 3] = 0xff;
+                      this.pos += 4;
+                  }
+  
+                  if (this.pos >= 4 * w * h) { 
+                      this.onImageSaved(img);
+                  }
+  
+              },
+              onLoad: function () {}
+          };
+  
+      window.webcam.onImageSaved = function (img) {
+        var canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        ctx.putImageData(img, 0, 0);
+      };
+    </script>
+    
+  
+
+</body></html>
